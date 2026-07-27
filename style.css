@@ -1,0 +1,66 @@
+/* Reset default margin */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full screen colorful background */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Colorful Gradient */
+    background: linear-gradient(
+        135deg,
+        #ff6b6b,
+        #feca57,
+        #48dbfb,
+        #5f27cd,
+        #10ac84
+    );
+
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Heading Design */
+h1{
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    background: rgba(255,255,255,0.15);
+    padding: 25px 60px;
+
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+    transition: 0.4s ease;
+}
+
+/* Hover Effect */
+h1:hover{
+    transform: scale(1.08);
+    background: rgba(255,255,255,0.25);
+}
+
+/* Animated Background */
+@keyframes gradientMove{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
